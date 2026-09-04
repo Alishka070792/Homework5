@@ -38,5 +38,50 @@ public class Main {
         } else {
             System.out.println(year + " год является не високосным");
         }
+
+        System.out.println("Task 4");//Задача 4
+        int deliveryDistance = 95; // подумать
+        int deliveryDays = 0;
+        if (deliveryDistance > 100){
+            System.out.println("Нет доставки");
+        } else if (deliveryDistance > 60) {
+          deliveryDays += 2;
+          System.out.println("Потребуется " + deliveryDays + " дней.");
+        } else if (deliveryDistance > 20) {
+            deliveryDays += 1;
+            System.out.println("Потребуется " + deliveryDays + " дней.");
+        } else {
+            System.out.println("Потребуется " + deliveryDays + " дней.");
+        }
+
+        System.out.println("Task 5");//Задача 5
+        int monthNumber = 8;
+        String season;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                season = "winter";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                season = "spring";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                season = "summer";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                season = "autumn";
+                break;
+            default:
+                System.out.println("Номер месяца должен быть от 1 до 12.");
+                return;
+        }
+        System.out.println(monthNumber + " этот месяц принадлежит сезону  "+ season + ".");
     }
 }
